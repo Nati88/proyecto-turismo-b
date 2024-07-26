@@ -1,0 +1,17 @@
+header{
+    img{
+        display:flex;
+        margin:auto;
+    }
+    .navbar{
+        background-color: map-get($colores, color2);
+        padding: 15px, 10px;
+        li{
+            a{
+                color:white;
+                font-weight: bold;
+                font-size: map-get($font-size, ti );
+            }
+        }
+    }
+}

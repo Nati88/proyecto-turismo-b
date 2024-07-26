@@ -1,0 +1,7 @@
+footer{
+    background-color: map-get($colores, color2 );
+    p{
+        color: white;
+        font-size: map-get($font-size, ti );
+    }
+}
