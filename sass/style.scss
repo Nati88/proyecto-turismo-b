@@ -1,9 +1,14 @@
 @import "./utilities/maps";
+@import "./utilities/mixins";
 
 @import "./base/resets";
 
 @import "./layout/header";
 
 @import "./layout/main-index";
+@import "./layout/main-atuel";
+@import "./layout/_main-diamante";
+@import "./layout/_main-alta";
+@import "./layout/_main-bodegas";
 
 @import "./layout/footer";
