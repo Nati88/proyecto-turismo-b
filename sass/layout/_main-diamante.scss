@@ -1,0 +1,9 @@
+main{
+    h1{
+        @include titulos;
+    }
+    p{
+        font-size: map-get($font-size , texto);
+        justify-content: center;
+    }
+}

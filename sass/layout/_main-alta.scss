@@ -1,0 +1,11 @@
+main{
+    .container{
+        h1{
+            @include titulos;
+        }
+        display: grid;
+        grid-template-columns: auto 100px;
+        align-items: center;
+        gap: 20px;
+    }
+}

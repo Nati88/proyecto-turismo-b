@@ -1,6 +1,32 @@
 main{
-    .vinosBodegas{
-        margin: 20px 50px 20px 50px;
-        text-align: center;
+    .bodegas{
+        h1{
+            @include titulos;
+        }
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: map-get($font-size, texto );
+        }
+    }
+    .copaVino{
+        .listaBodegas{
+            width: 30%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .copa img{
+            display: flex;
+            width: 60%;
+            height: 60%;
+            border:solid;
+            margin: 20px 20px 20px 120px;
+        }
     }
 }

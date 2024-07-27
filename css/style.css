@@ -33,11 +33,11 @@ main {
     margin-bottom: 40px;
     font-family: "Anton", sans-serif;
     font-size: 20px;
-    backdrop-filter: blur 15px; }
+    backdrop-filter: blur(15px); }
   main .primeraSectionImagen, main .segundaSectionImagen, main .tercerSectionImagen, main .cuartaSectionImagen {
     width: 100%;
     height: 31.25rem;
-    background-image: url(./assets/img/inicio/canon.webp);
+    background-image: url(/assets/img/inicio/canon.webp);
     background-position: center center;
     background-size: 80% 80%;
     background-repeat: no-repeat;
@@ -80,12 +80,75 @@ main {
     align-items: center; }
     main .sectionInformacion img {
       margin: 60px 20px 20px 50px; }
+    main .sectionInformacion h1 {
+      margin-top: 40px;
+      color: black;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: overline; }
   main .sectionActividades {
     display: flex; }
 
-main .vinosBodegas {
-  margin: 20px 50px 20px 50px;
-  text-align: center; }
+main h1 {
+  margin-top: 40px;
+  color: black;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: overline; }
+
+main p {
+  font-size: 20px;
+  justify-content: center; }
+
+main .container {
+  display: grid;
+  grid-template-columns: auto 100px;
+  align-items: center;
+  gap: 20px; }
+  main .container h1 {
+    margin-top: 40px;
+    color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: overline; }
+
+main .bodegas {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
+  main .bodegas h1 {
+    margin-top: 40px;
+    color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: overline; }
+  main .bodegas p {
+    font-size: 20px; }
+
+main .copaVino .listaBodegas {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; }
+
+main .copaVino .copa img {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  border: solid;
+  margin: 20px 20px 20px 120px; }
 
 footer {
   background-color: #324851; }
