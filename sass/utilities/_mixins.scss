@@ -1,9 +1,26 @@
 @mixin titulos{
     margin-top: 40px;
+    margin-bottom: 40px;
     color: black;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: map-get($font-size , ti );
     text-align: center;
     text-transform: uppercase;
     text-decoration: overline;
+}
+@mixin subtitulos{
+    margin-top:30px;
+    margin-bottom:30px;
+    color:black;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size:map-get($font-size , st );
+    text-align:center;
+    text-transform: uppercase;
+}
+
+@mixin parrafos{
+    font-size: map-get($font-size, texto );
+    color: black;
+    font-family: "Anton", sans-serif;
+    text-align: center;
 }

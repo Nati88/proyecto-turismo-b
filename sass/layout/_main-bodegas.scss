@@ -1,32 +1,49 @@
 main{
+    background-image: linear-gradient(to left top, #051937, #0c475d, #417679, #83a594, #ccd4ba);
+    width: 100%;
     .bodegas{
         h1{
             @include titulos;
         }
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
         p{
-            font-size: map-get($font-size, texto );
+            @include parrafos;
         }
     }
     .copaVino{
-        .listaBodegas{
-            width: 30%;
-            height: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
+        border: 10px solid;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        h2{
+            @include subtitulos;
         }
-        .copa img{
+        .list-group {
+            list-style-type: none;
+        }
+        
+        .list-group li {
+            background-color: #f8f9fa;
+            border: 3px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden; 
+        }
+        
+        .list-group li a {
             display: flex;
-            width: 60%;
-            height: 60%;
-            border:solid;
-            margin: 20px 20px 20px 120px;
+            padding: 5px 5px;
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .list-group li a:hover {
+            background-color: #e2e6ea; 
+            color: black;
+            text-decoration: underline;
+        }
+        .list-group li a:visited {
+            color: #6c757d;
         }
     }
 }

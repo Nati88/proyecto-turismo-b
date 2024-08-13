@@ -1,7 +1,17 @@
 footer{
     background-color: map-get($colores, color2 );
+    .bi{
+        width: 30px;
+        height: 24px;
+    }
     p{
         color: white;
         font-size: map-get($font-size, ti );
+    }
+    ul li{
+        .bi{
+            width: 24px;
+            height: 24px;
+        }
     }
 }

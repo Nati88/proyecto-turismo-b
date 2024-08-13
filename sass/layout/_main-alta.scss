@@ -1,11 +1,22 @@
-main{
+.sosneado{
+    background-image: linear-gradient(to left top, #051937, #0c475d, #417679, #83a594, #ccd4ba);
+    width: 100%;
     .container{
         h1{
             @include titulos;
         }
-        display: grid;
-        grid-template-columns: auto 100px;
-        align-items: center;
-        gap: 20px;
+        p{
+            @include parrafos;
+        }
+        .carousel{
+            margin-top: 80px;
+            position: relative;
+            margin-bottom: 80px;
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
     }
 }

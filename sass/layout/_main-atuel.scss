@@ -1,20 +1,120 @@
-main{
-    background-image: linear-gradient(to bottom, #324851, #1a6469, #097f6d, #43985d, #86ac41);
-    .sectionInformacion{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        img{
-            margin: 60px 20px 20px 50px;
-        }
-        h1{
-            @include titulos;
-        }
+.seccionInformacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        @include titulos;
+        margin-bottom: 20px;
     }
-    .sectionActividades{
-        display: flex;
-        background-color: map-get($colores, 4 );
+    p{
+        @include parrafos;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    
+    p{
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 375px) {
+    h1{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    p{
+        font-size: 0.75rem;
+    }
+}
+
+.seccionActividades{
+    display: flex;
+    .canon{
+        width: 500px;
+        height: 400px;
+        margin:80px 80px 20px 20px;
+    }
+    h2{
+        @include subtitulos;
+    }
+    ol li{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    li a{
+        text-decoration: none;
+        color:black;
+        @include parrafos;
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .canon{
+        width: 450px;
+        height: 350px;
+        margin: 60px 60px 15px 15px;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    ol li{
+        margin-top: 25px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .canon{
+        width: 300px;
+        height: 200px;
+        margin: 20px 20px 10px 10px;
+    }
+    
+    h2{
+        font-size: 1.25rem;
+    }
+    
+    ol li {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .canon{
+        width: 250px;
+        height: 150px;
+        margin: 10px 10px 5px 5px;
+    }
+    
+    h2{
+        font-size: 1rem;
+    }
+    
+    ol li{
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 }

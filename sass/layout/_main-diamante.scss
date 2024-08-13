@@ -1,9 +1,51 @@
-main{
+.diamante{
+    background-image: linear-gradient(to left top, #051937, #0c475d, #417679, #83a594, #ccd4ba);
     h1{
         @include titulos;
     }
     p{
-        font-size: map-get($font-size , texto);
-        justify-content: center;
+        @include parrafos;
+    }
+    .container{
+        display: grid;
+        place-items: center;
+        padding-bottom: 50px;
+        iframe{
+            width: 700px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 1024){
+    .diamante .container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .diamante .container iframe {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+@media (max-width: 375px) {
+    .diamante h1 {
+        font-size: 1.25rem;
+    }
+
+    .diamante p {
+        font-size: 0.875rem;
+    }
+    
+    .diamante .container {
+        padding-bottom: 20px;
+    }
+    
+    .diamante .container iframe {
+        width: 100%;
+        height: auto; 
     }
 }

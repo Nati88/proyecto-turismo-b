@@ -1,15 +1,19 @@
 header{
         img{
                 display:flex;
-                margin:auto;}
+                margin:auto;
+                width:250px;
+        }
         .navbar{
                 background-color: map-get($colores, color2);
-                padding: 15px, 10px 0px 10px;
                 li{
                         padding: 0px 20px;}
                 a{
                 color:white;
                 font-weight: bold;
                 font-size: map-get($font-size, ti );}
+                img{
+                      width: 50px;  
+                }
         }
 }
